@@ -1,10 +1,12 @@
 ﻿using System;
+using DesignPatterns.Factory_Method.Util;
+using Product;
 
-namespace DesignPatterns._1
+namespace Creator
 {
     public abstract class PizzaStore
     {
-        public Pizza orderPizza(String type)
+        public Pizza orderPizza(EnumTypePizza type)
         {
             Pizza pizza;
 
@@ -18,6 +20,6 @@ namespace DesignPatterns._1
             return pizza;
         }
 
-        protected abstract Pizza CreatePizza(String type);
+        protected abstract Pizza CreatePizza(EnumTypePizza type);
     }
 }

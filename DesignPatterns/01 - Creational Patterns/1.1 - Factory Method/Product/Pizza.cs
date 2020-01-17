@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace DesignPatterns._1
+namespace Product
 {
     public abstract class Pizza
     {

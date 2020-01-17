@@ -1,6 +1,8 @@
-﻿using System.Reflection.Metadata.Ecma335;
+﻿using System.Collections.Generic;
+using System.Reflection.Metadata.Ecma335;
+using Product;
 
-namespace DesignPatterns._1
+namespace ConcreteProduct
 {
     public class ChicagoStyleCheesePizza : Pizza
     {
@@ -9,6 +11,7 @@ namespace DesignPatterns._1
             name = "Pizza de queijo de prato fundo estilo Chicago";
             dough = "Massa Crosta Extra Grosso";
             sauce = "Molho de Tomate Ameixa";
+            toppings = new List<string>();
         }
     }
 }
